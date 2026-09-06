@@ -2,19 +2,6 @@
 
 Notable changes to Moose Master Cards and Rules are documented here.
 
-## [Unreleased]
-
-### Fixed
-
-- Restored the other 37 card images at higher resolution with clearer text,
-  sharper illustrations, and corrected colors, retaining their English content
-  and existing catalog paths. Removed fingers from the "Um" card image.
-- Reconstructed the "Write your own rule!" card image with AI to remove fingers
-  and their shadows, preserving the heading, border colors, and hoofprint motif.
-  Restored the partially obscured seventh hoofprint using the shared pattern
-  on other cards as the position and size reference, matching the intensity
-  of the other prints.
-
 ## [1.1.0] - 2026-09-06
 
 ### Added
