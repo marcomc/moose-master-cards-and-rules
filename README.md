@@ -4,6 +4,8 @@ An unofficial, independent learning guide to **Moose Master**, with illustrated
 cards, explanations, and an English/Italian interface. This project is shared
 for educational and informational purposes, to help people learn the game.
 
+See the [changelog](CHANGELOG.md) for release history.
+
 ## Contents
 
 - [Using the guide](#using-the-guide)
