@@ -3,19 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="application-version" content="1.1.0">
+<!-- Public GoatCounter /count URL; leave empty to disable visitor statistics. -->
+<meta name="goatcounter-endpoint" content="https://marcomc.goatcounter.com/count">
 <meta name="description" content="Moose Master: rules and illustrated cards. A multilingual guide to learning the game.">
 <title>Moose Master Cards and Rules</title>
 <link rel="stylesheet" href="styles.css">
 <script defer src="localization.js"></script>
+<script defer src="locales/it.js"></script>
+<script defer src="locales/en.js"></script>
+<script defer src="locales/zh.js"></script>
+<script defer src="locales/hi.js"></script>
+<script defer src="locales/es.js"></script>
+<script defer src="locales/ar.js"></script>
+<script defer src="locales/fr.js"></script>
+<script defer src="locales/bn.js"></script>
+<script defer src="locales/pt.js"></script>
+<script defer src="locales/id.js"></script>
+<script defer src="locales/ur.js"></script>
+<script defer src="locales/ja.js"></script>
+<script defer src="locales/de.js"></script>
+<script defer src="locales/da.js"></script>
+<script defer src="locales/sv.js"></script>
+<script defer src="locales/nb.js"></script>
+<script defer src="locales/fi.js"></script>
+<script defer src="locales/is.js"></script>
+<script defer src="locales/et.js"></script>
+<script defer src="locales/lv.js"></script>
+<script defer src="locales/lt.js"></script>
 <script defer src="cards.js"></script>
 <script defer src="app.js"></script>
+<script defer src="analytics.js"></script>
 </head>
 <body>
-<header><a class="brand" href="#">MOOSE MASTER <span>CARDS &amp; RULES</span></a><nav aria-label="Menu"><a href="#rules" data-i18n="navRules">How to play</a><a href="#catalog" data-i18n="navCards">The cards</a></nav><div class="language"><label for="language" data-i18n="language">Language</label><select id="language"><option value="en">English</option></select></div></header>
+<header><a class="brand" href="#"><bdi>MOOSE MASTER</bdi> <span data-i18n="brandSubtitle">CARDS &amp; RULES</span></a><nav aria-label="Menu"><a href="#rules" data-i18n="navRules">How to play</a><a href="#catalog" data-i18n="navCards">The cards</a></nav><div class="language"><label for="language" data-i18n="language">Language</label><select id="language"><option value="en">English</option></select></div></header>
 <main>
-<section class="hero"><p class="eyebrow" data-i18n="eyebrow">LEARN THE GAME, EXPLORE THE CARDS</p><h1>Moose Master<br>Cards and Rules<span class="dot">.</span></h1><p class="subtitle" data-i18n="subtitle">One card at a time. Two rules to remember. Plenty of ways to slip up.</p><p class="facts" data-i18n="facts">3+ players · Ages 8+ · About 30 minutes</p></section>
+<section class="hero"><p class="eyebrow" data-i18n="eyebrow">LEARN THE GAME, EXPLORE THE CARDS</p><h1><bdi>Moose Master</bdi><br><span data-i18n="heroTitle">Cards and Rules</span><span class="dot">.</span></h1><p class="subtitle" data-i18n="subtitle">One card at a time. Two rules to remember. Plenty of ways to slip up.</p><p class="facts" data-i18n="facts">3+ players · Ages 8+ · About 30 minutes</p><p class="language-note" data-i18n="languageNote">Unofficial translations. Images and quoted forbidden words remain in English; agree on equivalents before playing in another language.</p></section>
 <section id="rules"><div class="section-heading"><span class="number">01</span><h2 data-i18n="rulesTitle">Start here</h2></div><ol id="steps" class="steps"></ol><p class="edition" data-i18n="edition">This guide follows the 2019 rules. In the 2021 revision, the Moose Master makes antlers and everyone copies: the last player receives a personal rule, releasing the previous recipient. For this role, follow the instructions in your box.</p><p class="deck" data-i18n="deck">The complete deck: 44 Moose Master cards, 46 Penalty cards and 20 Moose Rules.</p></section>
 <section id="catalog"><div class="section-heading"><span class="number">02</span><h2 data-i18n="catalogTitle">Explore the cards</h2></div><div class="filters"><div><label for="search" data-i18n="search">Search cards</label><input type="search" id="search" autocomplete="off" placeholder="Name, word or effect…"></div><div><label for="type" data-i18n="type">Card type</label><select id="type"></select></div></div><p id="count" role="status" aria-live="polite"></p><div id="cards" class="cards"></div><div id="empty" hidden><p data-i18n="empty">No cards found. Try another word or change the type.</p><button id="reset" type="button" data-i18n="reset">Clear filters</button></div></section>
 <noscript><p>Enable JavaScript to browse the cards and switch languages.</p></noscript>
-</main><footer data-i18n="footer">An independent guide to Moose Master. Images and trademarks belong to their respective owners.</footer>
+</main><footer><p data-i18n="footer">An independent guide to Moose Master. Images and trademarks belong to their respective owners.</p><a href="CHANGELOG.md"><bdi>v1.1.0</bdi> · <span data-i18n="changelog">Changelog</span></a><p id="analytics-privacy" hidden><a href="https://www.goatcounter.com/help/privacy" data-i18n="analyticsPrivacy">Visitor statistics: privacy</a></p></footer>
 </body></html>
