@@ -255,3 +255,7 @@ These are drafting references only: their permissions do not apply to Moose Mast
 The caution about educational purpose reflects the
 [U.S. Copyright Office's explanation of fair use](https://www.copyright.gov/fair-use/more-info.html);
 it is not a claim that US law or a particular exception applies to this project.
+
+Web images use descriptive card-name filenames in `images/`: 720-pixel WebP
+previews (quality 85) and 1200-pixel WebP images (quality 90) opened on click.
+Dimensions refer to the longest edge; aspect ratios are preserved. Compression

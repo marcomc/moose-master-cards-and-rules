@@ -51,9 +51,9 @@
       const article = node('article', '', 'card'); article.id = card.id;
       const picture = node('a', '', 'picture'); picture.href = card.image;
       picture.target = '_blank'; picture.rel = 'noopener'; picture.setAttribute('aria-label', `${t.zoom}: ${c.name}`);
-      const img = node('img'); img.src = card.image; img.alt = c.name; img.loading = 'lazy';
-      img.width = Number(card.id.slice(1)) <= 19 ? 630 : 880;
-      img.height = Number(card.id.slice(1)) <= 19 ? 880 : 630;
+      const img = node('img'); img.src = card.thumbnail; img.alt = c.name; img.loading = 'lazy';
+      img.width = card.width;
+      img.height = card.height;
       picture.append(img);
       const body = node('div', '', 'body'); body.append(node('span', t.types[card.type], 'tag'), node('h3', c.name));
       const originalName = locales.en.cards[card.id].name;
