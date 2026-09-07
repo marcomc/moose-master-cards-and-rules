@@ -33,7 +33,7 @@ function run(options = {}) {
 }
 
 test('analytics is wired after the application and has a valid optional public endpoint', () => {
-  assert.ok(html.indexOf('src="analytics.js"') > html.indexOf('src="app.js"'));
+  assert.ok(html.indexOf('src="analytics.js"') > html.indexOf('src="app.js?'));
   const configured = html.match(/name="goatcounter-endpoint" content="([^"]*)"/)[1];
   assert.ok(configured === '' || /^https:\/\/[a-z0-9-]+\.goatcounter\.com\/count$/.test(configured));
   assert.match(html, /id="analytics-privacy" hidden/);

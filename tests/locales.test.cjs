@@ -13,7 +13,7 @@ const shippedCodes = ['en', 'it', 'zh', 'hi', 'es', 'ar', 'fr', 'bn', 'pt', 'id'
   'ja', 'de', 'da', 'sv', 'nb', 'fi', 'is', 'et', 'lv', 'lt'];
 const files = fs.readdirSync(path.join(root, 'locales')).filter(file => file.endsWith('.js'));
 const expectedCodes = files.map(file => path.basename(file, '.js'));
-const scripts = [...html.matchAll(/<script defer src="([^"]+)"><\/script>/g)].map(match => match[1]);
+const scripts = [...html.matchAll(/<script defer src="([^"]+)"><\/script>/g)].map(match => match[1].split("?")[0]);
 const context = vm.createContext({ window: {} });
 for (const script of scripts.filter(script => !['app.js', 'analytics.js'].includes(script))) {
   vm.runInContext(fs.readFileSync(path.join(root, script), 'utf8'), context, { filename: script });
@@ -110,7 +110,11 @@ test('localized markup and underlying images resolve', () => {
     assert.equal(typeof locales.en[key], 'string', `Unknown markup key: ${key}`);
   }
   for (const card of cards) {
-    assert.ok(fs.existsSync(path.join(root, card.image)), `Missing image: ${card.image}`);
+    for (const image of [card.image, card.thumbnail]) {
+      assert.equal(typeof image, "string");
+      assert.ok(image.endsWith(".webp"));
+      assert.ok(fs.existsSync(path.join(root, image)), `Missing image: ${image}`);
+    }
     assert.ok(locales.en.types[card.type], `Unknown type: ${card.type}`);
   }
 });
