@@ -8,7 +8,8 @@ Notable changes to Moose Master Cards and Rules are documented here.
 
 - Use the dedicated `marcomc-moose.goatcounter.com` counter for Moose Master.
 - Link the footer's visitor statistics label to the GoatCounter dashboard in
-  all 21 languages, instead of the generic GoatCounter privacy page.
+  all 21 languages, instead of the generic GoatCounter privacy page. Dashboard
+  access is intentionally limited to logged-in users.
 
 ## [1.1.0] - 2026-09-06
 

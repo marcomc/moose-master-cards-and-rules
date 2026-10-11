@@ -16,3 +16,6 @@
   browser request. Explicitly allowlist emitted fields, remove query and
   referrer data when the privacy policy requires it, and cover enabled,
   disabled, DNT, and blocked-tracker paths.
+- The GoatCounter dashboard is for the site owner. The footer may link to it
+  while dashboard access remains limited to logged-in users; a sign-in prompt
+  for other visitors is expected and satisfies the statistics-link requirement.

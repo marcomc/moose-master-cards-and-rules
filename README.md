@@ -158,7 +158,9 @@ use the same page path and title; query strings and fragments are excluded.
 Referrals include only the originating website's origin, without its path or
 query string. Missing referrals appear as direct/unknown traffic.
 The footer displays a translated link to the
-[GoatCounter dashboard](https://marcomc-moose.goatcounter.com/).
+[GoatCounter dashboard](https://marcomc-moose.goatcounter.com/). The dashboard
+is for the site owner and remains accessible only to logged-in users; other
+visitors are prompted to sign in.
 
 **Unique visits are estimates, not an exact count of people.**
 [GoatCounter sessions](https://www.goatcounter.com/help/sessions) deduplicate
