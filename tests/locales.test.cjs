@@ -121,7 +121,7 @@ test('localized markup and underlying images resolve', () => {
 
 test('release version matches the visible site, README and newest changelog release', () => {
   const version = html.match(/name="application-version" content="([^"]+)"/)[1];
-  assert.equal(version, '1.1.0');
+  assert.equal(version, '1.2.0');
   assert.ok(html.includes(`<bdi>v${version}</bdi>`));
   assert.ok(fs.readFileSync(path.join(root, 'README.md'), 'utf8').includes(`**${version}**`));
   const changelog = fs.readFileSync(path.join(root, 'CHANGELOG.md'), 'utf8');

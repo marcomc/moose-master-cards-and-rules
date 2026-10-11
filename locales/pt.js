@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("pt", {
   "description": "Moose Master: regras e cartas ilustradas. Um guia multilíngue para aprender a jogar.",
   "languageNote": "Traduções não oficiais. As imagens e as palavras proibidas entre aspas continuam em inglês; combinem os equivalentes antes de jogar em outro idioma.",
   "changelog": "Histórico de versões",
-  "analyticsPrivacy": "Estatísticas de visitas: privacidade"
+  "analyticsStats": "Estatísticas de visitas"
 });

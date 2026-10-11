@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("et", {
   "description": "Moose Master: reeglid ja piltidega kaardid. Mitmekeelne juhend mängu õppimiseks.",
   "languageNote": "Mitteametlikud tõlked. Pildid ja jutumärkides keelatud sõnad jäävad ingliskeelseks. Enne teises keeles mängimist leppige kokku vastavad sõnad.",
   "changelog": "Versiooniajalugu",
-  "analyticsPrivacy": "Külastusstatistika: privaatsus"
+  "analyticsStats": "Külastusstatistika"
 });

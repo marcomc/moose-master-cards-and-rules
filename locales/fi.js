@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("fi", {
   "description": "Moose Master: säännöt ja kortit kuvineen. Monikielinen opas pelin oppimiseen.",
   "languageNote": "Epäviralliset käännökset. Kuvat ja lainausmerkeissä olevat kielletyt sanat ovat edelleen englanniksi. Sopikaa vastaavista sanoista ennen pelaamista toisella kielellä.",
   "changelog": "Versiohistoria",
-  "analyticsPrivacy": "Kävijätilastot: tietosuoja"
+  "analyticsStats": "Kävijätilastot"
 });

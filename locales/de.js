@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("de", {
   "description": "Moose Master: Regeln und bebilderte Karten. Eine mehrsprachige Anleitung zum Spiel.",
   "languageNote": "Inoffizielle Übersetzungen. Bilder und zitierte verbotene Wörter bleiben auf Englisch. Einigt euch vor dem Spiel in einer anderen Sprache auf entsprechende Wörter.",
   "changelog": "Versionsverlauf",
-  "analyticsPrivacy": "Besuchsstatistiken: Datenschutz"
+  "analyticsStats": "Besuchsstatistiken"
 });

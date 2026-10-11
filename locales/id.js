@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("id", {
   "description": "Moose Master: aturan dan kartu bergambar. Panduan multibahasa untuk belajar bermain.",
   "languageNote": "Terjemahan tidak resmi. Gambar dan kata terlarang dalam tanda kutip tetap berbahasa Inggris; sepakati padanannya sebelum bermain dalam bahasa lain.",
   "changelog": "Riwayat versi",
-  "analyticsPrivacy": "Statistik kunjungan: privasi"
+  "analyticsStats": "Statistik kunjungan"
 });

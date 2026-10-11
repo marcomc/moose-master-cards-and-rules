@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("da", {
   "description": "Moose Master: regler og kort med billeder. En flersproget guide til at lære spillet.",
   "languageNote": "Uofficielle oversættelser. Billeder og forbudte ord i anførselstegn er stadig på engelsk. Aftal tilsvarende ord, før I spiller på et andet sprog.",
   "changelog": "Versionshistorik",
-  "analyticsPrivacy": "Besøgsstatistik: privatliv"
+  "analyticsStats": "Besøgsstatistik"
 });

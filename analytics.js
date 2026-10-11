@@ -34,5 +34,4 @@
   pixel.referrerPolicy = 'no-referrer';
   pixel.src = url.href;
   document.body.append(pixel);
-  document.getElementById('analytics-privacy').hidden = false;
 })();

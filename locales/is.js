@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("is", {
   "description": "Moose Master: reglur og myndir af spilunum. Fjöltyngdur leiðarvísir til að læra leikinn.",
   "languageNote": "Óopinberar þýðingar. Myndir og bönnuð orð innan gæsalappa eru áfram á ensku. Komið ykkur saman um samsvarandi orð áður en þið spilið á öðru tungumáli.",
   "changelog": "Útgáfusaga",
-  "analyticsPrivacy": "Heimsóknartölfræði: persónuvernd"
+  "analyticsStats": "Heimsóknartölfræði"
 });

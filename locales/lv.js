@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("lv", {
   "description": "Moose Master noteikumi un kārtis ar attēliem. Daudzvalodu ceļvedis spēles apgūšanai.",
   "languageNote": "Neoficiāli tulkojumi. Attēli un pēdiņās minētie aizliegtie vārdi paliek angliski. Pirms spēles citā valodā vienojieties par atbilstošajiem vārdiem.",
   "changelog": "Versiju vēsture",
-  "analyticsPrivacy": "Apmeklējumu statistika: privātums"
+  "analyticsStats": "Apmeklējumu statistika"
 });

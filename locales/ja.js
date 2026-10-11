@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("ja", {
   "description": "Moose Masterのルールとカードを画像付きで紹介。遊び方がわかる多言語ガイドです。",
   "languageNote": "非公式の翻訳です。画像と引用された禁止語は英語のままです。他の言語で遊ぶ場合は、対応する言葉を事前に決めてください。",
   "changelog": "更新履歴",
-  "analyticsPrivacy": "アクセス統計：プライバシー"
+  "analyticsStats": "アクセス統計"
 });

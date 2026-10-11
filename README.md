@@ -6,7 +6,7 @@ for educational and informational purposes, to help people learn the game.
 
 Visit the website: [moose.marcomc.com](https://moose.marcomc.com/).
 
-Current version: **1.1.0**. See the [changelog](CHANGELOG.md) for release history.
+Current version: **1.2.0**. See the [changelog](CHANGELOG.md) for release history.
 
 ## Contents
 
@@ -120,8 +120,8 @@ personal sites. It reports visits, referring websites, and approximate visitor
 countries without analytics cookies.
 
 The endpoint in `index.html` is configured as
-`https://marcomc.goatcounter.com/count`. Statistics are available in the owner's
-[GoatCounter dashboard](https://marcomc.goatcounter.com/). Counting starts when
+`https://marcomc-moose.goatcounter.com/count`. Statistics are available in the
+[GoatCounter dashboard](https://marcomc-moose.goatcounter.com/). Counting starts when
 this configuration is published to the production domain.
 
 To configure another counter or reuse the integration:
@@ -157,8 +157,8 @@ search terms, and navigation anchors do not create extra signals. All visits
 use the same page path and title; query strings and fragments are excluded.
 Referrals include only the originating website's origin, without its path or
 query string. Missing referrals appear as direct/unknown traffic.
-An enabled tracker displays a translated footer link to
-[GoatCounter's privacy policy](https://www.goatcounter.com/help/privacy).
+The footer displays a translated link to the
+[GoatCounter dashboard](https://marcomc-moose.goatcounter.com/).
 
 **Unique visits are estimates, not an exact count of people.**
 [GoatCounter sessions](https://www.goatcounter.com/help/sessions) deduplicate

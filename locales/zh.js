@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("zh", {
   "description": "Moose Master规则及卡牌图解。帮助你学会游戏的多语言指南。",
   "languageNote": "非官方翻译。图片及引号内的禁用词保留英文；使用其他语言游戏前，请先商定对应词。",
   "changelog": "更新日志",
-  "analyticsPrivacy": "访问统计：隐私"
+  "analyticsStats": "访问统计"
 });

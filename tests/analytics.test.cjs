@@ -11,7 +11,6 @@ const endpoint = 'https://moose-test.goatcounter.com/count';
 
 function run(options = {}) {
   const requests = [];
-  const notice = { hidden: true };
   const context = vm.createContext({
     URL,
     location: new URL(options.url || 'https://moose.marcomc.com/?search=private#catalog'),
@@ -20,7 +19,7 @@ function run(options = {}) {
     document: {
       referrer: options.referrer || '',
       querySelector: () => ({ content: options.endpoint ?? endpoint }),
-      getElementById: id => id === 'analytics-privacy' ? notice : requests.find(pixel => pixel.id === id),
+      getElementById: id => requests.find(pixel => pixel.id === id),
       createElement: () => ({
         attributes: {},
         setAttribute(name, value) { this.attributes[name] = value; }
@@ -29,23 +28,21 @@ function run(options = {}) {
     }
   });
   vm.runInContext(source, context);
-  return { requests, notice, context };
+  return { requests, context };
 }
 
 test('analytics is wired after the application and has a valid optional public endpoint', () => {
   assert.ok(html.indexOf('src="analytics.js"') > html.indexOf('src="app.js?'));
   const configured = html.match(/name="goatcounter-endpoint" content="([^"]*)"/)[1];
-  assert.ok(configured === '' || /^https:\/\/[a-z0-9-]+\.goatcounter\.com\/count$/.test(configured));
-  assert.match(html, /id="analytics-privacy" hidden/);
-  assert.match(html, /href="https:\/\/www.goatcounter.com\/help\/privacy" data-i18n="analyticsPrivacy"/);
+  assert.equal(configured, 'https://marcomc-moose.goatcounter.com/count');
+  assert.match(html, /href="https:\/\/marcomc-moose.goatcounter.com\/" data-i18n="analyticsStats"/);
 });
 
 test('disabled or malformed endpoints never send a tracking request', () => {
   for (const value of ['', 'YOUR-SITE', 'http://test.goatcounter.com/count',
     'https://test.goatcounter.com.evil.example/count', 'https://test.goatcounter.com/count?secret=1']) {
-    const { requests, notice } = run({ endpoint: value });
+    const { requests } = run({ endpoint: value });
     assert.equal(requests.length, 0, value);
-    assert.equal(notice.hidden, true);
   }
 });
 
@@ -61,9 +58,8 @@ test('local files, development servers and alternate hosts cannot affect product
 test('Do Not Track and Global Privacy Control prevent all tracking requests', () => {
   for (const options of [{ navigator: { doNotTrack: '1' } },
     { window: { doNotTrack: '1' } }, { navigator: { globalPrivacyControl: true } }]) {
-    const { requests, notice } = run(options);
+    const { requests } = run(options);
     assert.equal(requests.length, 0);
-    assert.equal(notice.hidden, true);
   }
   assert.equal(run({ navigator: { doNotTrack: '0', globalPrivacyControl: false } }).requests.length, 1);
 });
@@ -83,7 +79,6 @@ test('production sends only the documented fields and never sends a query or fra
   assert.equal(pixel.hidden, true);
   assert.equal(pixel.loading, 'eager');
   assert.equal(pixel.alt, '');
-  assert.equal(result.notice.hidden, false);
   vm.runInContext(source, result.context);
   assert.equal(result.requests.length, 1, 'Repeated initialization must not count twice');
   const bot = run({ navigator: { webdriver: true } });

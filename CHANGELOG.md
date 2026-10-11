@@ -2,6 +2,14 @@
 
 Notable changes to Moose Master Cards and Rules are documented here.
 
+## [1.2.0] - 2026-10-11
+
+### Fixed
+
+- Use the dedicated `marcomc-moose.goatcounter.com` counter for Moose Master.
+- Link the footer's visitor statistics label to the GoatCounter dashboard in
+  all 21 languages, instead of the generic GoatCounter privacy page.
+
 ## [1.1.0] - 2026-09-06
 
 ### Added

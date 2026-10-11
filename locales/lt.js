@@ -298,5 +298,5 @@ window.MOOSE_ADD_LOCALE("lt", {
   "description": "Moose Master taisyklės ir kortos su paveikslėliais. Daugiakalbis vadovas žaidimui išmokti.",
   "languageNote": "Neoficialūs vertimai. Paveikslėliai ir kabutėse pateikti draudžiami žodžiai lieka angliški. Prieš žaisdami kita kalba susitarkite dėl jų atitikmenų.",
   "changelog": "Versijų istorija",
-  "analyticsPrivacy": "Apsilankymų statistika: privatumas"
+  "analyticsStats": "Apsilankymų statistika"
 });
